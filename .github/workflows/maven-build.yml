@@ -35,8 +35,8 @@ jobs:
            path: ~/.sonar/cache
            key: ${{ runner.os }}-sonar
            restore-keys: ${{ runner.os }}-sonar
-      - name: Sonar analyze 
+      - name: Build and analyze
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
-        run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar
+        run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=sonar_gitact -Dsonar.projectName='sonar_gitact'
