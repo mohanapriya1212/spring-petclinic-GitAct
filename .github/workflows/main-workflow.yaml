@@ -3,6 +3,9 @@ on: [push]
 
 jobs:
   main:
-    uses: mohanapriya1212/spring-petclinic-GitAct/.github/workflows/maven-build.yml
+    uses: mohanapriya1212/spring-petclinic-GitAct/.github/workflows/maven-build.yml@v1
+
+        
+      
     
     
