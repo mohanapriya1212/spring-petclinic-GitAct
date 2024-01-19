@@ -1,1 +1,8 @@
 
+name: My workflow
+on:
+  workflow_dispatch:
+
+jobs:
+  call-workflow-using-branch:
+    uses: mohanapriya1212/spring-petclinic-GitAct/.github/workflows/maven-build.yml@main
