@@ -4,15 +4,8 @@
 name: Java CI with Maven
 
 on:
-  workflow_run:    
-    branches: 
-      - main
-    types:
-      - 'src/**'
-      - 'pom.xml'
-  pull_request:
-    branches:
-      - main
+  workflow_call:    
+    
 
 jobs:
   build:
