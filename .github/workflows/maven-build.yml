@@ -5,4 +5,4 @@ on:
   
 jobs:
   main:
-    uses: mohanapriya1212/template_workflows/.github/workflows/main-workflow.yaml@main
+    uses: mohanapriya1212/.github/workflows/main-workflow.yaml@main
