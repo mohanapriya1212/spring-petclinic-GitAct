@@ -1,8 +1,7 @@
 name: My workflow
 on:
-  workflow_dispatch:    
-     
+  workflow_dispatch   
   
 jobs:
   main:
-    uses: mohanapriya1212/.github/workflows/main-workflow.yaml@main
+    uses: mohanapriya1212/template_workflows/.github/workflows/main-workflow.yaml@main
